@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <script
+            src="https://kit.fontawesome.com/d42ee95cae.js"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            rel="stylesheet"
+            href="https://bootswatch.com/4/yeti/bootstrap.min.css"
+        />
+        <title>JS My Album Collection</title>
+    </head>
+    <body>
+        <div class="container mt-4">
+            <h1 class="display-4">
+                <i class="fas fa-record-vinyl"></i>
+                My<span class="text-primary">Album</span>Collection
+            </h1>
+            <form id="album-form">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="Artist">Artist</label>
+                    <input type="text" id="artist" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="year">Year</label>
+                    <input type="text" id="year" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="catalogNum">Catalog No.</label>
+                    <input type="text" id="catalogNum" class="form-control" />
+                </div>
+                <input
+                    type="submit"
+                    value="Add Album"
+                    class="btn btn-primary btn-block"
+                />
+            </form>
+            <table class="table table-striped mt-5">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Artist</th>
+                        <th>Year</th>
+                        <th>Catalog No.</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="album-list"></tbody>
+            </table>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
